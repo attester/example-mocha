@@ -1,0 +1,13 @@
+resources:
+  /:
+    - src
+tests:
+  mocha:
+    extraScripts:
+      - /library.js
+    files:
+      rootDirectory: test
+      includes:
+        - tdd/*.js
+    ui: tdd
+    assertion: chai
